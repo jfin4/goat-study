@@ -1,3 +1,4 @@
 ## Fort Ord goat foraging research project analysis
 
-![](./figures/correlation.png)
+![](./figures/correlation-3.png)
+![](./figures/model-fits.png)

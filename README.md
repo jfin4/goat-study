@@ -1,4 +1,9 @@
 ## Fort Ord goat foraging research project analysis
 
-![](./figures/correlation-3.png)
-![](./figures/model-fits.png)
+### Checking out spatial autocorrelation
+
+![Spatial autocorrelation.](./figures/correlation-3.png)
+
+### Fitting mixed-effect logistic regressions with model-weighted parameters
+
+![Model fits.](./figures/model-fits.png)

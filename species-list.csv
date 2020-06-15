@@ -1,0 +1,142 @@
+code,     "scientific name",               "common name",              cat
+ag,       ,                                ,                           ag
+amsp,     "Amsinckia sp.",                 "Fiddleneck",               onh
+aica,     "Aira caryophyllea",             "Silvery hairgrass",        ag
+anar,     "Anagalis arvensis",             "Scarlett pimpernel",       onn
+anca,     "Anthriscus caucalis",           "Bur chervil",              onn
+arca,     "Artemisia californica",         "California sagebrush",     onh
+ardo,     "Artemisia douglasiana",         "Mugwort",                  onh
+avba,     "Avena barbata",                 "Slender wild oats",        ag
+bapi,     "Baccharis pilularis",           "Coyote bush",              bapi
+bg,       ,                                "Bare ground",              bg
+brca,     "Bromus carinatus",              "California brome",         bu
+brdi,     "Bromus diandrus",               "Ripgut brome",             ag
+brho,     "Bromus hordeaceous",            "Softchess",                ag
+brma,     "Bromus madritensis",            "Spanish brome",            ag
+brmi,     "Briza minor",                   "Little quakinggrass",      ag
+brne,     ,                                ,                           onn
+brni,     "Brassica nigra",                "Black mustard",            onn
+bu,       ,                                ,                           bu
+caba,     "Carex barbarae",                "Santa Barbara sedge",      onh
+caov,     "Camissonia ovata",              "Suncup",                   onh
+capy,     "Carduus pycnocephalus",         "Italian thistle",          inv
+casp,     "Carex sp.",                     "Sedge",                    onh
+cegl,     "Cerastium glomeratum",          "Large mouse ears",         onn
+ceme,     "Centaurea melitensis",          "Tocalote",                 onn
+chca,     "Chenopodium californicum",      "Goosefoot",                onh
+chpo,     "Chlorogalum pomeridianum",      "Soap plant",               onn
+civu,     "Cirsium vulgare",               "Bull thistle",             inv
+clpe,     "Claytonia perfoliata",          "Miner's lettuce",          onh
+coca,     "Conyza canadensis",             "Canadian horseweed",       onh
+coma,     "Conium maculatum",              "Poison hemlock",           inv
+d,        ,                                ,                           dead
+dica,     "Dicholostemma capitatum",       "Blue dicks",               onh
+dead,     ,                                ,                           dead
+elgl,     "Elymus glaucus",                "Blue wildrye",             bu
+elsp,     "Elymus species",                "Wild-rye",                 ag
+eltr,     "Elymus triticoides",            "Creeping wildrye",         onh
+erbo,     "Erodium botrys",                "Broadleaf filaree",        onn
+erci,     "Erodium cicutarium",            "Coastal heron's bill",     onn
+ersp,     "Erodium sp.",                   "Filaree",                  onn
+femy,     "Festuca myuros",                "Rattail sixweeks grass",   ag
+fepe,     "Festuca perennis",              "Italian rye grass",        ag
+fesp,     "Festuca sp",                    "Fescue",                   ag
+figa,     "Logfia gallica",                "Narrowleaf cottonrose",    onn
+gaap,     "Galium aparine",                "Goose grass",              onn
+gaph,     ,                                ,                           onn
+gapo,     "Galium porrigens",              "Climbing bedstraw",        onh
+gasp,     "Galium sp.",                    "Bedstraw",                 onh
+gedi,     "Geranium dissectum",            "Cut-leaved geranium",      onn
+gemo,     "Geranium molle",                "Dovesfoot geranium",       onn
+gesp,     "Geranium sp.",                  "Geranium",                 onn
+gnca,     "Gnaphalium californicum",       "California everlasting",   onh
+gnsp,     "Pseudognaphalium sp.",          "Everlasting",              onh
+hiin,     "Hirschfeldia incana",           "Mustard",                  onn
+hobr,     "Hordeum brachyantherum",        "Meadow barley",            onh
+hocu,     "Horkelia cuneata",              "Wedgeleaf horkelia",       onh
+homu,     "Hordeum murinum",               "Foxtail barley",           ag
+hosp,     "Hordeum species",               "Foxtail",                  ag
+hygl,     "Hypochaeris glabra",            "Smooth cats-ear",          onn
+juba,     "Juncus balticus",               "Wire rush",                onh
+juoc,     "Juncus occidentalis",           "Western rush",             onh
+jupa,     "Juncus patens",                 "Spreading rush",           onh
+juph,     "Juncus phaeocephalus",          "Brownhead rush",           onh
+jusp,     "Juncus sp",                     "Rush",                     onh
+ju  ,     "Juncus sp",                     "Rush",                     onh
+jute,     "Juncus tenuis",                 "Path rush",                onh
+l,        ,                                ,                           litter
+litter,   ,                                ,                           litter
+letr,     "Leymus triticoides",            "Creeping wild rye",        onh
+lope,     "Festuca perennis",              "Perennial ryegrass",       onn
+lost,     "Hosackia stipularis",           "Stipulate lotus",          onh
+luar,     "Lupinus arboreus",              "Yellow bush lupine",       onh
+lubi,     "Lupinus bicolor",               "Bicolored lupine",         onh
+luna,     "Lupinus nanus",                 "Sky lupine",               onh
+lusp,     "Lupinus species",               "Lupine",                   onh
+mafa,     "Marah fabaceous",               "California man-root",      onh
+magr,     "Madia gracilis",                "Grassy tarweed",           onh
+masa,     "Madia sativa",                  "Coast tarweed",            onh
+masp,     "Madia species",                 "Madia",                    onh
+meca,     "Melica californica",            "California melic",         bu
+mein,     "Melilotus indica",              "Yellow sweet clover",      onn
+mepo,     "Medicago polymorpha",           "Burclover",                onn
+miau,     "Mimulus aurantiacus",           "Sticky monkey flower",     onh
+mope,     ,                                ,                           onh
+nace,     "Nassella cernua",               "Nodding needlegrass",      bu
+nale,     "Nassella lepida",               "Foothill needlegrass",     bu
+napu,     "Nassella pulchra",              "Purple needlegrass",       bu
+nasp,     "Nassella species",              "Needlegrass",              bu
+o,        ,                                "Other",                    other
+other,    ,                                "Other",                    other
+onn,      ,                                ,                           onn
+ons,      ,                                ,                           
+onh       ,                                ,                           onh
+petr,     "Pentagramma triangularis",      "Goldback fern",            onh
+phaq,     "Phalaris aquatica",             "Harding grass",            inv
+phma,     "Phacelia malvifolia",           "Stinging phacelia",        onh
+plco,     "Plantago coronopus",            "Buckhorn plantain",        onn
+plla,     "Plantago lanceolata",           "English plantain",         onn
+pomo,     ,                                ,                           onh
+posc,     ,                                ,                           other
+pose,     "Pogogyne serpylloides",         "Thyme leaf mesa mint",     onh
+psca,     "Pseudognaphalium californicum", "Ladies tobacco",           onh
+pslu,     "Pseudognaphalium luteoalbum",   "Jersey cudweed",           onn
+ptdr,     "Pterostygia drymarioides",      "Woodland threadstem",      onh
+quag,     "Quercus agrifolia",             "Coast live oak",           quag
+raca,     "Ranunculus californicus",       "California buttercup",     onh
+ruac,     "Rumex acetosella",              "Sheep's sorrel",           onn
+rucr,     "Rumex crispus",                 "Curly dock",               onn
+rusa,     "Rumex salicifolius",            "Willow dock",              onh
+rusp,     "Rumex sp.",                     "Dock",                     onn
+sacr,     "Sanicula crassicaulis",         "Gamble weed",              onh
+same,     "Salvia mellifera",              "Black sage",               onh
+sibe,     "Sisyrinchum bellum",            "Blue-eyed grass",          onh
+siga,     "Silene gallica",                "Flycatch",                 onn
+sima,     "Sidalcea malviflora",           "Checkerbloom",             onh
+soas,     "Sonchus asper",                 "Prickly sow-thistle",      onn
+sool,     "Sonchus oleraceus",             "Sowthistle",               onn
+soum,     "Solanum umbelliferum",          "Blue witch",               onh
+stbu,     "Stachys bullata",               "Wood mint",                onh
+stme,     "Stellaria media",               "Chickweed",                onn
+stce,     "Stipa cernua",                  "Nodding needlegrass",      bu
+stle,     "Stipa lepida",                  "Foothill needlegrass",     bu
+stpu,     "Stipa pulchra",                 "Purple needlegrass",       bu
+stsp,     "Stipa species",                 "Needlegrass",              bu
+todi,     "Toxicodendron diversilobum",    "Poison oak",               onh
+tran,     "Trifolium angustifolium",       "Narrow leaf clover",       onn
+trau,     "Trifolium aureum",              "Golden clover",            onn
+trhi,     "Trifolium hirtum",              "Rose clover",              onn
+trcr,     "Triteleia crocea",              "Yellow brodiaea",          onh
+trgr,     "Trifolium gracilentum",         "Pinpoint clover",          onh
+trix,     "Triteleia ixioides",            "Pretty face",              onh
+trmi,     "Trifolium microcephalum",       "Small head clover",        onh
+vela,     "Verbena lasiostachys",          "Common verbena",           onh
+vilu,     "Vicia ludoviciana",             "Slender vetch",            onh
+vihi,     "Vicia hirsuta",                 "Hairy vetch",              onn
+visa,     "Vicia stiva",                   "Spring vetch",             onn
+visp,     "Vicia sp.",                     "Vetch",                    onh
+vite,     "Vicia tetrasperma",             "Four seeded vetch",        onn
+vubr,     "Festuca bromoides",             "Six-week fescue",          ag
+vumy,     "Festuca myuros",                "Rat-tail fescue",          ag
+vuoc,     "Festuca octoflora",             "Sixweeks fescue",          ag
+vusp,     "Festuca species",               "Fescue",                   ag

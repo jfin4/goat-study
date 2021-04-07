@@ -56,7 +56,17 @@ mu <- reshape(mu, # what data to reshape
 pre <- sort(unique(data$bout))
 suf <- rep("_mu", length = length(pre))
 colnames(mu)[-c(1:2)] <- paste0(pre, suf)
-sig <- aggregate(occ ~ cat + bout + tmnt, data = data, FUN = sd)
+
+#define function for getting se for binomial distribution
+get_se <- function(x) {
+    k <- 1
+    p <- mean(x)
+    q <- 1 - p
+    n <- length(x)
+    se <- sqrt((p * q) / (k * n))
+    return(se)
+}
+sig <- aggregate(occ ~ cat + bout + tmnt, data = data, FUN = get_se)
 sig <- reshape(sig, 
                idvar = c("cat", "tmnt"), 
                v.names = "occ", 
@@ -182,7 +192,6 @@ for (cat in cats) {
 write.csv(big_aic_table, "./tables/aic-table.csv", 
            row.names = F, quote = F)
 
-
 # get weighted parameters
 notcols <- match(c("binid_mu", "binid_sig"), names(weighted_param_table))
 tab <- weighted_param_table[-notcols]
@@ -213,7 +222,7 @@ names(lun) <- c("param", "n")
 if(!"n" %in% names(params))
     params <- merge(params, lun, by = "param")
 params <- aggregate(valw ~ cat + param + n, params, sum)
-params$val <- with(params, valw / n)
+params$val <- with(params, valw)
 params <- params[-match(c("n", "valw"), names(params))]
 params <- reshape(params, 
                   v.names = "val", 
@@ -251,12 +260,10 @@ wdat <- list(c(1:7), -c(1,5), -c(1, 5), NA, -c(1, 5), -c(1, 5))
 labels <- c("Coyote Brush", "Bunchgrass", "Annual Grass",
             "Legend","Other Native Herbaceous", "Other Non-native")
 drawleg <- c(FALSE, FALSE, FALSE, TRUE, FALSE, FALSE)
-colt <- c("#99660066", "#66990066", "#ffdd0066", 
-          NA, "#99cc0066", "#ff990066")
-coltbox <- c("#cc9966", "#99cc66", "#ffee00", 
-             NA, "#ccee66", "#ffcc66")
-colc <- "#99999966"
-colcbox <- "#cccccc"  
+colt <- "#ff000088"
+coltbox <- "#ff3333"
+colc <- "#00000088"
+colcbox <- "#333333"  
 bwid <- 0.20
 shift <- 0.12
 lwd = 0.5
@@ -265,7 +272,7 @@ for (i in 1:length(cats)) {
         plot(0, type = "n", axes = FALSE,
             xlim = c(bout_min, bout_max), ylim = c(0, 100), 
             xlab = "", ylab = "")
-        lines(c(-0.7, 0.3) , c(60, 70), col = coltbox[1])
+        lines(c(-0.7, 0.3) , c(60, 70), col = coltbox)
         lines(c(1, 2) , c(60, 70), col = colcbox)
         text(-.2, 85,  adj = c(0.5, 0.5),
             labels = "Treatment")
@@ -275,10 +282,10 @@ for (i in 1:length(cats)) {
             labels = "Regression Line")
         text(2.5, 58,  adj = c(0, 0.5),
             labels = expression(paste("for ", Bin[i])))
-        lines(c(-0.2, -0.2) , c(10, 50), lwd = 0.5, col = coltbox[1])
+        lines(c(-0.2, -0.2) , c(10, 50), lwd = 0.5, col = coltbox)
         lines(c(1.5, 1.5) , c(10, 50), lwd = 0.5, col = colcbox)
         polygon(c(-0.3, -0.1, -0.1, -0.3), c(20, 20, 40, 40), 
-                col = coltbox[1], border = coltbox[1])
+                col = coltbox, border = coltbox)
         polygon(c(1.4, 1.6, 1.6, 1.4), c(20, 20, 40, 40), 
                 col = colcbox, border = colcbox)
         text(2.5, 30, adj = c(0, 0.5),
@@ -304,8 +311,8 @@ for (i in 1:length(cats)) {
                 boxwex = bwid, 
                 add = TRUE, 
                 axes=FALSE, 
-                col = coltbox[i],
-                border = coltbox[i],
+                col = coltbox,
+                border = coltbox,
                 staplewex = 0, 
                 whisklty = "solid", 
                 whisklwd = 0.5,
@@ -326,8 +333,12 @@ for (i in 1:length(cats)) {
                 range = 0,
                 outline = F
         )
-        lines(newc$bout, newc$occ_perc, lwd = lwd, col = colc)
-        lines(newt$bout, newt$occ_perc, lwd = lwd, col = colt[i])
+        for (bid in unique(newdata$binid)) {
+            newcsub <- newc[newc$binid == bid, ]
+            newtsub <- newt[newt$binid == bid, ]
+            lines(newcsub$bout, newcsub$occ_perc, lwd = lwd, col = colc)
+            lines(newtsub$bout, newtsub$occ_perc, lwd = lwd, col = colt)
+        }
         if (yaxis[i]) {
             axis(2)
         }
@@ -342,7 +353,7 @@ for (i in 1:length(cats)) {
              labels = labels[i])
         if (cat == "bapi") {
             text(x = 0:6, y = rep(-5, 7), cex = 0.8,
-                 c("P/B", "P/B", "P", "P", "B", "P", "P"))
+                 c("P/B", "B", "P", "P", "B", "P", "P"))
         }
     }
 }
